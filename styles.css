@@ -8,6 +8,12 @@ main {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100%;
+    gap: 1rem;
+    margin: .25rem .25rem .25rem .25rem;
+}
+
+main > * {
+    border-radius: 25px;
 }
 
 .sidebar {
@@ -16,8 +22,102 @@ main {
     grid-row: 1 / 5;
 }
 
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+    gap: .5rem;
+}
+
+.sidebar > * {
+    margin: 1.5rem 0 0 1rem;
+    color: white;
+}
+
+.sidebar-user-nav {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 1rem;
+}
+
+.sidebar-user-nav > h3 > a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: #FAF9F6;
+    padding: 0 2rem 0 2rem;
+}
+
+.header-top {
+    display: flex;
+}
+
+.header-top-left {
+    display: flex;
+    gap: 1rem;
+    flex: 2;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+input {
+    border-radius: 25px;
+    border: 0;
+    background-color: #C89FE6;
+    width: 50%;
+}
+
+.header-top-right {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-bottom-left {
+    display: flex;
+    gap: 1rem;
+    flex: 2;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+.header-bottom-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-buttons {
+
+    display: flex;
+    gap: 3rem;
+}
+
+.header-buttons > button {
+    border-radius: 25px;
+    background-color: #8830D1;
+    color: white;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border: 0;
+}
+
+.header-buttons > button:hover {
+    background-color: #6A0DAD;
+    cursor: pointer;
 }
 
 .content-container {
