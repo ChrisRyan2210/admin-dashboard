@@ -113,15 +113,40 @@ input {
     color: white;
     padding: 1rem 2.5rem 1rem 2.5rem;
     border: 0;
+    flex: 1 1 auto;
 }
 
 .header-buttons > button:hover {
     background-color: #6A0DAD;
-    cursor: pointer;
+    cursor: pointer ;
 }
 
 .content-container {
     background-color: lightgray;
     grid-column: 2 / 5;
     grid-row: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.projects-container {
+    flex: 3;
+    overflow: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 25px;
+    padding: .5rem;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.other-container {
+    flex: 1;
 }
